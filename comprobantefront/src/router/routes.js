@@ -29,6 +29,7 @@ import Pagocatastrovehiculos from "pages/Pagocatastrovehiculos";
 import Temporada from "pages/Temporada";
 import Verificarconsulta from "pages/Verificarconsulta";
 import Buscarcomprobante from "pages/Buscarcomprobante";
+import Buscarcomprobantetodo from "pages/Buscarcomprobantetodo";
 const routes = [
   {
     path: '/',
@@ -64,6 +65,7 @@ const routes = [
       { path: '/temporada', component: Temporada,meta: {requiresAuth: true} },
       { path: '/verificarconsulta', component: Verificarconsulta,meta: {requiresAuth: true} },
       { path: '/buscarcomprobante', component: Buscarcomprobante,meta: {requiresAuth: true} },
+      { path: '/buscarcomprobantetodo', component: Buscarcomprobantetodo,meta: {requiresAuth: true} },
     ]
   },
 

@@ -106,6 +106,7 @@ Route::group(['middleware'=>'auth:sanctum'],function (){
 
 
     Route::post('/buscarcomprobante',[\App\Http\Controllers\ComprobanteController::class,'buscarcomprobante']);
+    Route::post('/buscarcomprobantetodo',[\App\Http\Controllers\ComprobanteController::class,'buscarcomprobantetodo']);
 
 
 });

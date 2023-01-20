@@ -399,6 +399,17 @@
             </q-item-label>
           </q-item-section>
         </q-item>
+        <q-item clickable to="/buscarcomprobantetodo" exact v-if="$store.state.boolbuscarcomprobantetodo">
+          <q-item-section avatar>
+            <q-icon name="search" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Buscar comprobante (TODO)</q-item-label>
+            <q-item-label caption>
+              Buscar Comprobante TODO
+            </q-item-label>
+          </q-item-section>
+        </q-item>
 
 
         <q-item

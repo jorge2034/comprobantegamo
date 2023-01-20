@@ -651,4 +651,20 @@ SUM(d.subtotal) as monto
          $comprobante->where('nombre','LIKE','%'.$request->nombre.'%');
         return $comprobante->orderBy('fecha', 'desc')->get();
     }
+    public function buscarcomprobantetodo(Request $request)
+    {
+        $comprobante = Comprobante::with('cliente')
+         ->with('detalles')
+         ->where('porcaja',true)
+         ->where('estado','PAGADO');
+        if(!is_null($request->ci) || $request->ci!="")
+         $comprobante->where('ci','LIKE','%'.$request->ci.'%');
+        if(!is_null($request->paterno) || $request->paterno!="")
+         $comprobante->where('paterno','LIKE','%'.$request->paterno.'%');
+        if(!is_null($request->materno) || $request->materno!="")
+         $comprobante->where('materno','LIKE','%'.$request->materno.'%');
+        if(!is_null($request->nombre) || $request->nombre!="")
+         $comprobante->where('nombre','LIKE','%'.$request->nombre.'%');
+        return $comprobante->orderBy('fecha', 'desc')->get();
+    }
 }
