@@ -696,7 +696,7 @@ export default {
           }else{
             y=y+0.35+a
           }
-          if (cont==66){
+          if (cont==65){
             // doc.addPage();
             // cont=0
             // header(this.$store.state.user.unid.nombre,this.ahora,this.fecha.inicio,this.fecha.fin)
