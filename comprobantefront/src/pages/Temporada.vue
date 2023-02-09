@@ -196,9 +196,10 @@ export default {
       //  {label:"FERIA VINTO",nombre:"FERIA VINTO",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
        //{label:"SAN JUAN",nombre:"SAN JUAN",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
         // {label:"TODOS SANTOS",nombre:"TODOS SANTOS",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
-        {label:"NAVIDAD 2022",nombre:"NAVIDAD 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
-        {label:"CALVARIO 2022-2023",nombre:"CALVARIO 2022-2023",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
-        {label:"PROMOCIONES 2022",nombre:"PROMOCIONES 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+       // {label:"NAVIDAD 2022",nombre:"NAVIDAD 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+       //  {label:"PROMOCIONES 2022",nombre:"PROMOCIONES 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+       {label:"CALVARIO 2022-2023",nombre:"CALVARIO 2022-2023",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+       {label:"CARNAVAL 2023",nombre:"CARNAVAL 2023",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
       ],
 
       /*
@@ -206,10 +207,13 @@ export default {
 
       */
 
-      reportetemporada:[{label:"NAVIDAD 2022",nombre:"NAVIDAD 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+      reportetemporada:[
+        // {label:"NAVIDAD 2022",nombre:"NAVIDAD 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+        // {label:"TODOS SANTOS",nombre:"TODOS SANTOS",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+        // {label:"PROMOCIONES 2022",nombre:"PROMOCIONES 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
         {label:"CALVARIO 2022-2023",nombre:"CALVARIO 2022-2023",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
-      {label:"TODOS SANTOS",nombre:"TODOS SANTOS",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
-      {label:"PROMOCIONES 2022",nombre:"PROMOCIONES 2022",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"}],
+        {label:"CARNAVAL 2023",nombre:"CARNAVAL 2023",coditem:"1534011",nombreitem:"Patentes por Temporadas (mercados)",codsubitem:"153401101",nombresubitem:"Patentes por Temporadas",detalle:"Patentes por Temporadas (mercados)"},
+    ],
 
       temporada:{},
       repotemporada:{},
