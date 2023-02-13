@@ -69,7 +69,10 @@
           <q-input dense outlined label="monto + formualrio " :value="rubrocobro.monto+2"  />
         </div>
         <div class="col-12">
-          <q-input dense outlined label="nrocomprobante" v-model="nrocomprobante" required />
+          <q-input dense outlined label="Nro comprobante" v-model="nrocomprobante" required />
+        </div>
+        <div class="col-12">
+          <q-input dense outlined label="Ubicación de la actividad" v-model="registrocobro.ubicacion"/>
         </div>
         <div class="col-12">
           <!--    <q-input dense outlined label="temporada" v-model="rubrocobro.temporada"  />-->
