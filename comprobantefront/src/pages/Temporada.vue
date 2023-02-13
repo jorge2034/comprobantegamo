@@ -34,7 +34,7 @@
           <q-input dense outlined label="esposo" v-model="clientecobro.esposo"  />
         </div>
         <div class="col-3">
-          <q-input dense outlined label="direccion" v-model="registrocobro.ubicacion"  />
+          <q-input dense outlined label="direccion" v-model="clientecobro.direccion"  />
         </div>
         <div class="col-12"></div>
         <div class="col-6">
