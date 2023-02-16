@@ -110,7 +110,7 @@
       <q-card-section>
           <div class="row">
             <div class="col-4"><q-input @input="buscarcliente" label="ci" v-model="ci" dense outlined /></div>
-            <div class="col-4"><q-select :options="['','CH','LP','CB','OR','PT','TJ','SC','BE','PD','OTROS']" outlined dense square label="Expedido" v-model="cliente.expedido"/></div>
+            <div class="col-4"><q-select :options="[' ','CH','LP','CB','OR','PT','TJ','SC','BE','PD','OTROS']" outlined dense square label="Expedido" v-model="cliente.expedido"/></div>
             <div class="col-4"><q-input label="paterno" v-model="cliente.paterno" dense outlined /></div>
             <div class="col-4"><q-input label="materno" v-model="cliente.materno" dense outlined /></div>
             <div class="col-4"><q-input label="nombre" v-model="cliente.nombre" dense outlined /></div>
@@ -368,7 +368,7 @@ export default {
           data:detalles,
           nrocomprobante:this.nrocomprobante,
         }).then((res) => {
-          console.log(res.data)
+          console.log("data: ",res.data)
           let dat=res.data[0]
           // return false
           this.clientecobro={}
@@ -691,7 +691,7 @@ export default {
         if (res.data.length==0){
           this.$axios.post(process.env.URL+'/cliente',{
             ci:this.ci,
-            expedido:this.cliente.expedido,
+            expedido:this.cliente.expedido!=""?this.cliente.expedido:"OR",
             paterno:this.cliente.paterno,
             materno:this.cliente.materno,
             nombre:this.cliente.nombre,
