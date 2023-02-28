@@ -274,11 +274,13 @@ export default {
         let y=0
         let sumtotal=0
         let con=0
+        let contador=0
         this.miscomprobantestotales.forEach(r=>{
           // console.log(this.reportetemporada.label+' '+r.nrocomprobante.temporada)
           if (r.nrocomprobante!='' && r.nrocomprobante!=null && r.temporada==this.repotemporada.label){
             y+=0.4
             con++
+            contador++
             doc.text(1, y+3, r.fecha)
             doc.text(3.5, y+3, r.nrocomprobante)
             doc.text(5.5, y+3, r.nrotramite)
@@ -297,7 +299,7 @@ export default {
           }
         })
         doc.setFont(undefined,'bold')
-        doc.text(3, y+3.5, 'SON: '+con+' COMPROBANTES')
+        doc.text(3, y+3.5, 'SON: '+contador+' COMPROBANTES')
         doc.text(12, y+3.5, 'TOTAL RECAUDADCION: ')
         doc.text(1.8, y+5, '_____________________          _____________________________       _________________________')
         doc.text(2, y+5.3, 'FIRMA SELLO CAJERO')
